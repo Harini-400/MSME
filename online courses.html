@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dropdown</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            padding: 0;
+        
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar li {
+            position: relative;
+            margin-right: 20px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: black;
+            padding: 10px 20px;
+            display: block;
+            position: relative;
+        }
+
+        .navbar .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: white;
+            border: 1px solid #ccc;
+            z-index: 1;
+            min-width: 200px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar .dropdown-content a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .navbar .dropdown-content a:hover {
+            background-color: #f0f0f0;
+        }
+
+        .navbar li:hover .dropdown-content {
+            display: block;
+        }
+
+        .navbar .highlighted {
+            background-color: #6a5acd;
+            color: white;
+            border-radius: 20px;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="#" class="highlighted">online courses</a>
+                    <div class="dropdown-content">
+                        <a href="online courses.html">Physical Design Online</a>
+                        <a href="online courses.html">ASIC Verification Online</a>
+                        <a href="online courses.html">Analog Layout Design Online</a>
+                        <a href="online courses.html">Analog Circuit Design Online</a>
+                        <a href="online courses.html">Design For Test (DFT) Online</a>
+                        <a href="online courses.html">RTL Coding and FPGA Design Online</a>
+
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <!-- Your page content here -->
+    </div>
+</body>
+</html>
